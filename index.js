@@ -62,7 +62,8 @@ rtm.on(RTM_EVENTS.MESSAGE, function handleRtmMessage(message) {
 					resolve();
 				});
 			});
-			promise.then(() => web.files.upload("phantom: "+urlstr, {file: fs.createReadStream(filePath), channels: message.channel, title: "phantom: "+urlstr}, function handleStreamFileUpload(err, res) {
+			promise.then(() => web.files.upload("phantom: "+urlstr, {file: fs.createReadStream(filePath), channels: message.channel, 
+title: "PhantomJS: "+urlstr}, function handleStreamFileUpload(err, res) {
 				console.log(err, res);
 			}));
 		}
