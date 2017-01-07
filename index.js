@@ -39,9 +39,9 @@ rtm.on(RTM_EVENTS.MESSAGE, function handleRtmMessage(message) {
 	try {
 		url = message.text.match(regex);
 	} catch(e) {
-		web.chat.postMessage(message.channel, "Error: 文字列関係がア！", function(err, res) {
+		//web.chat.postMessage(message.channel, "Error: 文字列関係がア！", {as_user: true}, function(err, res) {
 			console.log(err, res);
-		});
+		//});
 	}
 	if (url) {
 		console.log(url[0].indexOf("reiju:"));
