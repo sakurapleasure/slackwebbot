@@ -1,0 +1,15 @@
+{
+  "name": "slackwebbot",
+  "version": "1.0.0",
+  "description": "A bot for your slack team. this bot shows a screenshot of webpages by user's request.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Reiju",
+  "license": "MIT",
+  "dependencies": {
+    "@slack/client": "^3.8.1",
+    "webshot": "git+https://github.com/brenden/node-webshot.git"
+  }
+}
