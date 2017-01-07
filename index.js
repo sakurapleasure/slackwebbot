@@ -53,7 +53,7 @@ rtm.on(RTM_EVENTS.MESSAGE, function handleRtmMessage(message) {
 			const promise = new Promise((resolve, reject) => {
 				webshot(url[1], filePath, function(err) {
 					if(err) {
-						web.chat.postMessage(message.channel, "PhantomJSが限界になった(error)", function(err, res) {
+						web.chat.postMessage(message.channel, "PhantomJSが限界になった(error)", {as_user: true}, function(err, res) {
 							console.log(err, res);
 						});
 						console.log(err);
