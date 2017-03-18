@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "@slack/client": "^3.8.1",
+    "html-entities": "^1.2.0",
     "webshot": "git+https://github.com/brenden/node-webshot.git"
   }
 }
